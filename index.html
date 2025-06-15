@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Electra Creator</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #1f1f1f;
+      color: white;
+    }
+    .container {
+      border-radius: 20px;
+      background: #333;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    input {
+      width: 300px;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      margin: 10px 0;
+    }
+    button {
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: none;
+      background: #4caf50;
+      color: white;
+      cursor: pointer;
+    }
+    #statusContainer {
+      display: none;
+      margin-top: 20px;
+    }
+    pre {
+      background: #222;
+      padding: 10px;
+      text-align: left;
+      border-radius: 10px;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌐 Create Your Electra App</h1>
+    <input id="urlInput" placeholder="Enter a URL..." />
+    <br>
+    <button onclick="createApp()">Generate</button>
+    <div id="statusContainer">
+      <pre id="status"></pre>
+    </div>
+  </div>
+  <script>
+    const { createAppFromUrl } = require('./createApp');
+
+    function updateStatus(msg) {
+      const status = document.getElementById('status');
+      const container = document.getElementById('statusContainer');
+      status.textContent += msg + '\n';
+      container.style.display = 'block';
+    }
+
+    function createApp() {
+      const url = document.getElementById('urlInput').value;
+      if (!url) return updateStatus("❗ Please enter a URL");
+
+      updateStatus("🚀 Starting app creation...");
+      createAppFromUrl(url, (msg) => updateStatus(msg));
+    }
+  </script>
+</body>
+</html>
