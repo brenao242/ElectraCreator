@@ -15,7 +15,7 @@
 
 </div>
 
-**Electra Creator** lets you convert any website URL into a standalone **Electra app** — a fully functional desktop application
+**Electra Creator** lets you convert any website URL into a standalone **Electron app** — a fully functional desktop application
 
 In just seconds, you'll have a `.exe` ready to go!
 
