@@ -36,3 +36,9 @@ In just seconds, you'll have a `.exe` ready to go!
    npx electron .
    ```
 3. You done!
+
+<div align="center">
+
+# 🌟 Star me!
+## It Will help me a lot!
+</div>
