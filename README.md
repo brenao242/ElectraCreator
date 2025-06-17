@@ -36,7 +36,15 @@ In just seconds, you'll have a `.exe` ready to go!
    npx electron .
    ```
 3. You done!
+
+<div align="center">
+
 # Or
+
+</div>
+
+<br>
+
 1. Just open the start.bat file
 
 <br>
