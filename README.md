@@ -41,4 +41,7 @@ In just seconds, you'll have a `.exe` ready to go!
 
 # 🌟 Star me!
 ## It Will help me a lot!
+<br>
+
+# [Download](https://github.com/TheYali1/ElectraCreator/releases/)
 </div>
