@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# ⚡ Electra Creator  
+# ⚡ Electra Creator (Only for windows!)
 ## Turn any website link into a real desktop app!
 
 ![Electra Creator Logo](https://i.imagesup.co/images2/0a0150056d9af7d29ecb5fae8a94264ddbf55f03.png)
